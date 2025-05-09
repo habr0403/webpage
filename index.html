@@ -1,88 +1,137 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paws & Tails - A Community for Dog Lovers</title>
+    <title>Paws & Tails - An Interactive Web Experience for Dog Lovers</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .interactive-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Paws & Tails</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="https://www.animalhumanesociety.org/adoption">Adoption</a></li>
-                <li><a href="https://www.akc.org/expert-advice/training/">Training</a></li>
-                <li><a href="https://dogsinc.org/connect/blog/?gad_source=1&gad_campaignid=20257872137">Stories</a></li>
-                <li><a href="https://www.fourpaws.com/pets-101/quizzes-and-activities/what-dog-breed-matches-your-personality-quiz">Quiz</a></li>
-            </ul>
+        <h1>Paws & Tails</h1>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#games">Interactive Games</a>
+            <a href="#resources">Resources</a>
         </nav>
     </header>
-
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Welcome to the Ultimate Dog Lovers Community</h2>
-                <p>Discover, learn, and share your love for dogs</p>
-                <button class="button"><li><a href="mailto:brandonhalloran@yahoo.com">Join Our Pack</a></li></button>
-            </div>
-        </section>
-
-        <section class="featured-video">
-            <h2>Featured Story</h2>
+        <section id="gallery">
+            <h2>Featured Gallery</h2>
             <div class="gallery">
-                <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/472787421_628599516298466_1440951238602165066_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=101&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=X7Di0kTquLwQ7kNvwGFdo42&_nc_oc=AdkbGXE3DgYc1sKV4xwS22KwswxF1Z3L1dU5KAXNAYPGBsKoMN5PvZCCs5RAMDsdD6L0vO2dZ-BeUj3BtPjwm4Cl&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=OXTZoz5ObZ2lDfptxUND8Q&oh=00_AfItVAkIwSYWrRxmnBRF0PTmUgJicMsIGfYYBCQOftCRMQ&oe=68242A67" alt="First Bath">
-                <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/481071369_661564869668597_6297584368213067050_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-dtRPLvU9DsQ7kNvwECEydh&_nc_oc=Adks344lZaLlW_zEhB6G5X_SDhLma0erRmPA7x5z-zwNX3T85QNSQ7DF5DmQ4J34ohp2LvsZ1SjGM0qd7HeD8afF&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=zvPdsBbrEsM7fe3l2Y8l8w&oh=00_AfKLfVUkjvT-wXUuEkY_myW7qSpf5EqvGV-RSt0od5oR2w&oe=68243671" alt="I am finally Free!!">
-                <img src="habr0403/webpage/backseat.jpg" alt="I could get used to these car rides">
-                <img src="habr0403/webpage/2dogs.PNG" alt="Meeting all new friends!">
-                <img src="ihttps://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/468812689_602328435592241_5011156778397040789_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=u6v8WfgNq9EQ7kNvwHdGgbS&_nc_oc=Adl_1DYLLNDxXrV-KSPX4qo4n7Fm9Kr1Xdyk941HYhfmh8BU7lVbS0ZxDC7L4HCPO6TL0MB8PECyHrTc53obKsne&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=u5EauKMhbfAbRvWoWo_-KQ&oh=00_AfJ7zAwkEKy8soo_Sj8YpFg47Z36VplqHX5v8AJ5sjnr1Q&oe=68243349" alt="Dont Interupt me during nap time">
-                <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/469010151_602328432258908_8382507378938371734_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=IWtmmQjFS10Q7kNvwEVEbJc&_nc_oc=Admc7JhGW4172Kal8hALTOKBWu5qgBQApX_1x7kcUuTi2lPpdKAg__acJtcXWxrzJqfurSR3_vpkEpjPNjlCxDsT&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=nvQFg3KTwCFTuAQ-_57TFQ&oh=00_AfIQ7ukqZsJ98GI5f9EGnJ4MzoDe-aBxmp1nUKKD84ejcQ&oe=6824333A" alt="I love my new life!">
-                <img src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/469304013_604501278708290_3724719967990941629_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JwO5Rht8MFsQ7kNvwF2a9VG&_nc_oc=AdnLORrim8J5_LEMOTM8o-4SHJn8Zw9IIoVbAgd4pyi60jEaB7Jp6VOZ4vATw1dl1ZHCFke-ubDGGX6kKSkls8RB&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=a5u7ee-XNyYW8zwDhz8Uaw&oh=00_AfIspWMehZtUEZsskShevQMYGQPpu6omzkeSAwoCm0Y6ug&oe=68244F2F" alt="What did I say about my naps!">
-            </div>
+                <img src="dog1.jpg" alt="Dog 1">
+                <img src="dog2.jpg" alt="Dog 2">
+                <img src="dog3.jpg" alt="Dog 3">
+                <img src="dog4.jpg" alt="Dog 4">
             </div>
         </section>
-
-        <section class="interactive-sections">
-            <div class="section-card">
-                <h3>Find Your Perfect Match</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzB4c2JWpM2OylfEahxz6MIn_LElGdDPY5g&s">
-                <p>Try the Dog Breed Selector</p>
-                <li><a href= "https://www.iams.com/dog-breed-selector">Click Here</a></li>
-            </div>
-            <div class="section-card">
-                <h3>Training Tips</h3>
-                <img src= "https://c8.alamy.com/comp/J5NWXC/funny-dog-training-with-barbell-in-sport-gym-concept-of-sport-and-J5NWXC.jpg">
-                <p>Create your own personalized Dog Training Plan</p>
-                <li><a href= "https://woofz.academy/sex_4_d?cohort=woofz22_v3&lang=en&utm_source=googleadwords_int&utm_medium=cpc&utm_campaign=Woofz_Web_Search_Potty%2FBite%2FCrate%2FHouse_26.04.24_%5Bwoofz22_v3%5D_WW_Broad_tCPA&ad_id=697747074607&adset_id=159978671645&campaign_id=21235066064&utm_term=how+to+train+a+puppy&gad_source=1&gad_campaignid=21235066064&gbraid=0AAAAAqesVNRqHmK4evfpdAHOQDLRJPu13&gclid=CjwKCAjwz_bABhAGEiwAm-P8YQm3k3bMRlvyVaj51mP1JVCuCjlxHPRiFV8Yjjx-djiCbigTfvEoqBoCryAQAvD_BwE&uuid=8655360c-3bae-4e74-9220-25bda1f44119">Click Here</a></li>
-            </div>
-            <div class="section-card">
-                <h3>Success Stories</h3>
-                <img src= "https://img.buzzfeed.com/buzzfeed-static/static/2023-08/2/22/asset/e796cf287b9b/sub-buzz-3391-1691014675-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto">
-                <p>Read heartwarming adoption tales</p>
-                <li><a href="https://www.rescuecrew.org/happy-tails-adoption-stories">Click Here</a></li>
-                
-            </div>
+        <section id="games" class="interactive-section">
+            <h2>Interactive Games</h2>
+            <button onclick="startQuiz()">Which Dog Breed Matches Your Personality?</button>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Explore our <a href="https://www.akc.org/" target="_blank">Dog Training Resources</a>.</p>
+            <p>Learn more about <a href="https://www.petfinder.com/" target="_blank">Adoption</a>.</p>
         </section>
     </main>
-
     <footer>
-        <div class="footer-content">
-            <div class="newsletter">
-                <h3>Join Our Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="brandonhalloran@yahoo.com">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-            </div>
-        </div>
+        <p>&copy; 2025 Paws & Tails. All rights reserved.</p>
     </footer>
+    <script>
+        function startQuiz() {
+            alert("Welcome to the Dog Breed Quiz! Let's find your perfect match.");
+          const questions = [
+                {
+                    question: "How active are you?",
+                    options: ["Very Active", "Moderately Active", "Not Very Active"],
+                    answer: 0
+                },
+                {
+                    question: "What size of dog do you prefer?",
+                    options: ["Small", "Medium", "Large"],
+                    answer: 1
+                },
+                {
+                    question: "Do you have children?",
+                    options: ["Yes", "No"],
+                    answer: 0
+                }
+            ];
+
+            let score = 0;
+
+            for (let i = 0; i < questions.length; i++) {
+                const userAnswer = prompt(`${questions[i].question}\n${questions[i].options.join('\n')}`);
+                if (userAnswer && questions[i].options.includes(userAnswer)) {
+                    score += questions[i].options.indexOf(userAnswer) === questions[i].answer ? 1 : 0;
+                }
+            }
+
+            let result;
+            if (score === questions.length) {
+                result = "You are a perfect match for an active dog!";
+            } else if (score > 0) {
+                result = "You might enjoy a medium-energy dog.";
+            } else {
+                result = "Consider a low-energy breed.";
+            }
+
+            alert(result);
+        }
+    </script>
 </body>
 </html>
