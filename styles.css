@@ -33,7 +33,7 @@ body {
     z-index: 1000;
 }
 
-.logo h1 {
+.logo  {
     color: white;
     font-family: 'Comic Neue', cursive;
     font-size: 2rem;
@@ -45,13 +45,13 @@ body {
     gap: 2rem;
 }
 
-.nav-links a {
+.nav-links  {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links :hover {
     color: var(--secondary-color);
 }
 
@@ -74,7 +74,7 @@ body {
     padding: 2rem;
 }
 
-.hero h2 {
+.hero  {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -92,20 +92,19 @@ body {
 
 .cta-button:hover {
     background-color: var(--primary-color);
-}
-.gallery {
-  display: grid;  /* Use a grid layout for responsiveness */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size */
-  gap: 10px;      /* Add space between images */
-  padding: 10px;   /* Add some padding around the grid */
-}
 
-.gallery img {
-  width: auto;
-  height: auto; /* Maintain aspect ratio */
-  border: 1px solid #ccc; /* Add a subtle border */
-  object-fit: none; /* Ensure images fill the space */
-}
+<title>Image Gallery</title>
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 10px;
+  padding: 10px;
+
+.gallery img 
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio */
 
 /* Interactive Sections */
 .gallery {
@@ -128,8 +127,8 @@ body {
     transform: translateY(-5px);
 }
 
-/* Footer */
-footer {
+
+.footer {
     background-color: var(--primary-color);
     color: white;
     padding: 3rem 2rem;
@@ -149,13 +148,13 @@ footer {
     margin-top: 1rem;
 }
 
-.newsletter-form input {
+.newsletter-form {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 25px;
 }
 
-.newsletter-form button {
+.newsletter-form {
     background-color: var(--accent-color);
     color: white;
     border: none;
@@ -169,7 +168,7 @@ footer {
     gap: 1rem;
 }
 
-.social-links a {
+.social-links {
     color: white;
     text-decoration: none;
 }
@@ -180,7 +179,7 @@ footer {
         display: none;
     }
     
-    .hero h2 {
+    .hero {
         font-size: 2rem;
     }
     
