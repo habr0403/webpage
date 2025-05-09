@@ -101,8 +101,8 @@ body {
 }
 
 .gallery img {
-  width: auto;
-  height: auto; /* Maintain aspect ratio */
+  width: 75%;
+  height: 75%; /* Maintain aspect ratio */
   border: 1px solid #ccc; /* Add a subtle border */
   object-fit: none; /* Ensure images fill the space */
 }
