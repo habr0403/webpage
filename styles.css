@@ -111,7 +111,7 @@ body {
 .interactive-sections {
   display: block;
   height: 75%;
-  grid-template: auto;
+  grid-template-rows: auto;
   gap: 0;
 }
 
