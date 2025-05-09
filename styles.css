@@ -111,7 +111,7 @@ body {
 .interactive-sections {
   display: grid;
   height: auto;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: auto;
   gap: auto;
 }
 
