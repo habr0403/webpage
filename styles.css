@@ -104,7 +104,7 @@ body {
   width: auto;
   height: auto; /* Maintain aspect ratio */
   border: 1px solid #ccc; /* Add a subtle border */
-  object-fit: fill; /* Ensure images fill the space */
+  object-fit: contain; /* Ensure images fill the space */
 }
 
 /* Interactive Sections */
