@@ -109,10 +109,10 @@ body {
 
 /* Interactive Sections */
 .interactive-sections {
-  display: grid;
-  height: auto;
+  display: block;
+  height: 75%;
   grid-template: auto;
-  gap: auto;
+  gap: 0;
 }
 
 .section-card {
