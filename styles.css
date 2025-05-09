@@ -101,10 +101,10 @@ body {
 }
 
 .gallery img {
-  width: 100%;    /* Make images fit their container */
-  height: auto;   /* Maintain aspect ratio */
+  width: auto;
+  height: auto; /* Maintain aspect ratio */
   border: 1px solid #ccc; /* Add a subtle border */
-  object-fit: cover; /* Ensure images fill the space */
+  object-fit: fill; /* Ensure images fill the space */
 }
 
 /* Interactive Sections */
