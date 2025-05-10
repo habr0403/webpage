@@ -31,15 +31,15 @@ nav a:hover {
 }
 
 .gallery {
-    display: grid;
-    grid-row: 10%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
 }
 
 .gallery img {
-    width: fit-content;
-    height: fit-content;
+    width: 200px;
+    height: auto;
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.2s;

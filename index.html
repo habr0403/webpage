@@ -6,6 +6,92 @@
     <title>Paws & Tails - An Interactive Web Experience for Dog Lovers</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            margin: 20px 0;
+        }
+        
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FFD700;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .interactive-section {
+            text-align: center;
+            margin: 50px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        button {
+            background-color: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #FFC107;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,14 +106,10 @@
         <section id="gallery">
             <h2>Featured Gallery</h2>
             <div class="gallery">
-                <img src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/469304013_604501278708290_3724719967990941629_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JwO5Rht8MFsQ7kNvwF2a9VG&_nc_oc=AdnLORrim8J5_LEMOTM8o-4SHJn8Zw9IIoVbAgd4pyi60jEaB7Jp6VOZ4vATw1dl1ZHCFke-ubDGGX6kKSkls8RB&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=a5u7ee-XNyYW8zwDhz8Uaw&oh=00_AfIspWMehZtUEZsskShevQMYGQPpu6omzkeSAwoCm0Y6ug&oe=68244F2F">
-            
-                <img src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/468812689_602328435592241_5011156778397040789_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=u6v8WfgNq9EQ7kNvwHdGgbS&_nc_oc=Adl_1DYLLNDxXrV-KSPX4qo4n7Fm9Kr1Xdyk941HYhfmh8BU7lVbS0ZxDC7L4HCPO6TL0MB8PECyHrTc53obKsne&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=u5EauKMhbfAbRvWoWo_-KQ&oh=00_AfJ7zAwkEKy8soo_Sj8YpFg47Z36VplqHX5v8AJ5sjnr1Q&oe=68243349">
-            
-                <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/469010151_602328432258908_8382507378938371734_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=IWtmmQjFS10Q7kNvwEVEbJc&_nc_oc=Admc7JhGW4172Kal8hALTOKBWu5qgBQApX_1x7kcUuTi2lPpdKAg__acJtcXWxrzJqfurSR3_vpkEpjPNjlCxDsT&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=nvQFg3KTwCFTuAQ-_57TFQ&oh=00_AfIQ7ukqZsJ98GI5f9EGnJ4MzoDe-aBxmp1nUKKD84ejcQ&oe=6824333A">
-            
-                <img src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/481071369_661564869668597_6297584368213067050_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-dtRPLvU9DsQ7kNvwECEydh&_nc_oc=Adks344lZaLlW_zEhB6G5X_SDhLma0erRmPA7x5z-zwNX3T85QNSQ7DF5DmQ4J34ohp2LvsZ1SjGM0qd7HeD8afF&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&_nc_gid=zvPdsBbrEsM7fe3l2Y8l8w&oh=00_AfKLfVUkjvT-wXUuEkY_myW7qSpf5EqvGV-RSt0od5oR2w&oe=68243671">
-            
+                <img src="dog1.jpg" alt="Dog 1">
+                <img src="dog2.jpg" alt="Dog 2">
+                <img src="dog3.jpg" alt="Dog 3">
+                <img src="dog4.jpg" alt="Dog 4">
             </div>
         </section>
         <section id="games" class="interactive-section">
@@ -45,8 +127,7 @@
     </footer>
     <script>
         function startQuiz() {
-            alert("Welcome to the Dog Breed Quiz! Let's find your perfect match.");
-          const questions = [
+            const questions = [
                 {
                     question: "How active are you?",
                     options: ["Very Active", "Moderately Active", "Not Very Active"],
