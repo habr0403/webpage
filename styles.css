@@ -31,8 +31,8 @@ nav a:hover {
 }
 
 .gallery {
-    display: block;
-    block-size: 75%;
+    display: grid;
+    grid-column: 75%;
     justify-content: center;
     margin: 20px;
 }
