@@ -1,5 +1,5 @@
 body {
-    font-family: 'cursive', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
@@ -53,7 +53,7 @@ nav a:hover {
 .interactive-section {
     text-align: center;
     margin: 50px 0;
-    background-color: #fff;
+    background-color: #e9c309;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
