@@ -38,8 +38,8 @@ nav a:hover {
 }
 
 .gallery img {
-    width: auto;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.2s;
