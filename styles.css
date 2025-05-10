@@ -32,7 +32,7 @@ nav a:hover {
 
 .gallery {
     display: block;
-    block-size: auto;
+    block-size: 75%;
     justify-content: center;
     margin: 20px;
 }
