@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 .gallery img {
-    width: 300px;
+    width: 200px;
     height: auto;
     margin: 10px;
     border-radius: 10px;
@@ -54,6 +54,7 @@ nav a:hover {
 
 .interactive-section {
     text-align: center;
+    text-size-adjust: auto;
     margin: 50px 0;
     background-color: #8B4513;
     padding: 20px;
