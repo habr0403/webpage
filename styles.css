@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center;
 }
 
 header {
@@ -22,6 +23,7 @@ nav a {
     margin: 0 15px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -53,7 +55,7 @@ nav a:hover {
 .interactive-section {
     text-align: center;
     margin: 50px 0;
-    background-color: #7e07f5;
+    background-color: #8B4513;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
