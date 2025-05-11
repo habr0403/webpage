@@ -1,5 +1,5 @@
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
@@ -40,8 +40,8 @@ nav a:hover {
 }
 
 .gallery img {
-    width: 300px;
-    height: auto;
+    width: 275px;
+    height: 275px;
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.2s;
