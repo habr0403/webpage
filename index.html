@@ -88,6 +88,121 @@
 
             alert(result);
         }
+
+        let pawPrintsActive = false;
+        let treats = 0;
+
+        function togglePawPrints() {
+            pawPrintsActive = !pawPrintsActive;
+            if (pawPrintsActive) {
+                document.addEventListener('mousemove', createPawPrint);
+            } else {
+                document.removeEventListener('mousemove', createPawPrint);
+            }
+        }
+
+        function createPawPrint(e) {
+            const paw = document.createElement('div');
+            paw.className = 'paw-print';
+            paw.style.left = e.clientX + 'px';
+            paw.style.top = e.clientY + 'px';
+            paw.innerHTML = '🐾';
+            document.body.appendChild(paw);
+            
+            setTimeout(() => {
+                paw.style.opacity = '1';
+            }, 50);
+
+            setTimeout(() => {
+                paw.remove();
+            }, 2000);
+        }
+
+        function giveTreat() {
+            treats++;
+            document.getElementById('treats').textContent = treats;
+            
+            const treat = document.createElement('div');
+            treat.style.position = 'fixed';
+            treat.style.left = Math.random() * window.innerWidth + 'px';
+            treat.style.top = '-50px';
+            treat.innerHTML = '🦴';
+            treat.style.fontSize = '2em';
+            document.body.appendChild(treat);
+
+            let pos = -50;
+            const fall = setInterval(() => {
+                pos += 5;
+                treat.style.top = pos + 'px';
+                if (pos > window.innerHeight) {
+                    clearInterval(fall);
+                    treat.remove();
+                }
+            }, 20);
+        }
+
+        function playBark() {
+            const barks = ['Woof!', 'Arf!', 'Ruff!', 'Bark!'];
+            const bark = document.createElement('div');
+            bark.style.position = 'fixed';
+            bark.style.left = Math.random() * window.innerWidth + 'px';
+            bark.style.top = Math.random() * window.innerHeight + 'px';
+            bark.textContent = barks[Math.floor(Math.random() * barks.length)];
+            bark.style.fontSize = '2em';
+            bark.style.color = '#ff6b6b';
+            document.body.appendChild(bark);
+
+            setTimeout(() => bark.remove(), 1000);
+        }
+
+        function startDogCatcher() {
+            let score = 0;
+            const gameArea = document.createElement('div');
+            gameArea.style.position = 'fixed';
+            gameArea.style.left = '0';
+            gameArea.style.top = '0';
+            gameArea.style.width = '100%';
+            gameArea.style.height = '100%';
+            gameArea.style.background = 'rgba(0,0,0,0.5)';
+            gameArea.innerHTML = `<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:white;padding:20px;border-radius:10px;">
+                <h3>Score: <span id="game-score">0</span></h3>
+                <p>Click the dogs as they appear!</p>
+                <button onclick="this.parentElement.parentElement.remove()">End Game</button>
+            </div>`;
+            document.body.appendChild(gameArea);
+
+            const spawnDog = () => {
+                if (!document.contains(gameArea)) return;
+                const dog = document.createElement('div');
+                dog.innerHTML = '🐕';
+                dog.style.position = 'fixed';
+                dog.style.left = Math.random() * window.innerWidth + 'px';
+                dog.style.top = Math.random() * window.innerHeight + 'px';
+                dog.style.fontSize = '2em';
+                dog.style.cursor = 'pointer';
+                dog.onclick = () => {
+                    score++;
+                    document.getElementById('game-score').textContent = score;
+                    dog.remove();
+                };
+                gameArea.appendChild(dog);
+                setTimeout(() => dog.remove(), 2000);
+            };
+
+            const gameInterval = setInterval(spawnDog, 1000);
+            setTimeout(() => clearInterval(gameInterval), 30000);
+        }
+
+        // Make gallery images interactive
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                img.style.transform = 'scale(1.1) rotate(5deg)';
+                setTimeout(() => {
+                    img.style.transform = 'scale(1) rotate(0deg)';
+                }, 500);
+            });
+        });
+
     </script>
 </body>
 </html>
