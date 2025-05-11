@@ -20,14 +20,14 @@ nav {
 
 nav a {
     margin: 0 15px;
-    color: rgb(7, 78, 52);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff6a00;
+    color: #08e926;
 }
 
 .gallery {
@@ -38,7 +38,7 @@ nav a:hover {
 }
 
 .gallery img {
-    width: 400px;
+    width: auto;
     height: auto;
     margin: 10px;
     border-radius: 10px;
@@ -53,7 +53,7 @@ nav a:hover {
 .interactive-section {
     text-align: center;
     margin: 50px 0;
-    background-color: #e9c309;
+    background-color: #7e07f5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
