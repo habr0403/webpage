@@ -10,6 +10,8 @@ body {
 
 header {
     background-color: #8B4513;
+    font-size: 50px;
+    font-family: "Georgia, serif"
     color: white;
     padding: 30px;
     text-align: center;
@@ -23,6 +25,7 @@ nav a {
     margin: 0 15px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     transition: color 0.3s;
@@ -41,8 +44,8 @@ nav a:hover {
 }
 
 .gallery img {
-    width: 275px;
-    height: 275px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.2s;
