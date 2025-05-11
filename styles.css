@@ -126,3 +126,31 @@ button:hover {
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        let pawPrintsActive = false;
+        let treats = 0;
+
+        function togglePawPrints() {
+            pawPrintsActive = !pawPrintsActive;
+            if (pawPrintsActive) {
+                document.addEventListener('mousemove', createPawPrint);
+            } else {
+                document.removeEventListener('mousemove', createPawPrint);
+            }
+        }
+
+        function createPawPrint(e) {
+            const paw = document.createElement('div');
+            paw.className = 'paw-print';
+            paw.style.left = e.clientX + 'px';
+            paw.style.top = e.clientY + 'px';
+            paw.innerHTML = '🐾';
+            document.body.appendChild(paw);
+            
+            setTimeout(() => {
+                paw.style.opacity = '1';
+            }, 50);
+
+            setTimeout(() => {
+                paw.remove();
+            }, 2000);
+        }
