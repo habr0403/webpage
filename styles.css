@@ -1,86 +1,100 @@
 body {
     font-family:'Lucida Grande';
-    background-image: linear-gradient(to bottom right, green, yellow, brown, orange);
+    color: #fffbfb;
+    background-image: url("https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/278542799_157500803408342_1296902888764613259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=cjmWY4K3khQQ7kNvwFO8pvH&_nc_oc=AdkHDCAuCw_gb0Ty6K42HcdRpLnk5PEDOnyOH3oM3rIf4l5dbFk2enJPInoRR83iNK1UE5uGD60-CqTrZ52zKgQx&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=WxfZfg3KIa82GBP8kzSLfQ&oh=00_AfLPnimdIYvGHKrWYPi_HxDOPRFCJ0M6_XdkImvllEnEQQ&oe=6827FE7F");
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
     background-blend-mode: lighten;
     margin: 0;
     padding: 0;
     line-height: 1.5;
     text-align: center;
-}
+    }
 
 header {
-    background-color: black;
-    font-size: 40px;
+    background-blend-mode: light;
+    background-image: url("https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/278542799_157500803408342_1296902888764613259_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=cjmWY4K3khQQ7kNvwFO8pvH&_nc_oc=AdkHDCAuCw_gb0Ty6K42HcdRpLnk5PEDOnyOH3oM3rIf4l5dbFk2enJPInoRR83iNK1UE5uGD60-CqTrZ52zKgQx&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=WxfZfg3KIa82GBP8kzSLfQ&oh=00_AfLPnimdIYvGHKrWYPi_HxDOPRFCJ0M6_XdkImvllEnEQQ&oe=6827FE7F");
+    font-size: 10px;
+    background-blend-mode: lighten;
     font-family: "Georgia, serif"; padding: 0px; color:#fff;
     text-align: center;
     padding-top: 0px; padding-bottom: 0px;
     margin-top: 0px;
-
-.h1 { 
-    font-size: 50px;
+}
+h1 { 
+    font-size: 70px;
     margin: 0px;
 }
 
-.h2 {
-    font-size: 25px;
-    margin: 0px;
+h2 {
+    font-size: 15px;
+    margin: 30px;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
 nav a {
-    margin: 15px;
-    color: rgb(255, 255, 255);
+    margin: 20px;
+    color: lab(95 0 -0.01);
+    background-color: #001480;
     text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 40px;
+    text-align: justify;
+    font-weight: bold; 
+    transition: 0.2;
 }
 
 nav a:hover {
     color: #08e926;
 }
 
-.gallery {
+div.gallery {
     text-align: center;
-    display: inline-block;
+    width: 50%;
+    height: 10%;
+    display: center;
     flex-wrap: wrap;
-    justify-content: center;
+    color: #f2e3e3;
     margin: 10px;
 }
 
 .gallery img {
-    width: 200px;
-    height: 200px;
+    color: #ffffff;
+    display: flex;
+    width: 80%;
+    height: 80%;
     margin: 10px;
     border-radius: 10px;
-    transition: transform 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.92s;
+    box-shadow: 0 4px 8px rgb(41 154 0);
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(15);
 }
 
 .interactive-section {
     text-align: center;
+    color: #17ff1f;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
-    text-size-adjust: auto;
-    margin: 50px 0;
-    background-color: #8B4513;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-size-adjust: 1150;
+    background-blend-mode: lighten;
+    border-radius: 0px;
+    box-shadow: 0 px 118px rgb(38 255 0 / 10%);
 }
-
+    
+.resources {
+    font-family: 'cursive'   
+}
+    
 footer {
-    background-color: #8B4513;
-    color: white;
+    background-color: #81470d;
+    font: #2d9041;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     position: relative;
-    bottom: 0;
+    bottom: 10;
     width: 100%;
 }
 
@@ -88,8 +102,8 @@ button {
     background-color: #FFD700;
     border-style: groove;
     padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 30px;
+    border-radius: 95px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -101,8 +115,7 @@ button:hover {
             margin: 10px;
             border: none;
             border-radius: 25px;
-            background: linear-gradient(45deg, #010101, #e8eb08);
-            color: white;
+            color: #0d36dd;
             font-size: 16px;
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -110,13 +123,13 @@ button:hover {
 
         .interactive-button:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 75px 15px rgba(0,0,0,0.2);
         }
 
         .paw-print {
             position: fixed;
             pointer-events: none;
-            color: rgb(0, 0, 0);
+            color: rgb(240 1 1);
             opacity: 90%;
             transition: opacity 0.5s;
         }
@@ -124,6 +137,9 @@ button:hover {
         .gallery img {
             transition: transform 0.3s;
             cursor: pointer;
+            width: 50%;
+            height: 50%;
+            
         }
 
         .gallery img:hover {
@@ -139,4 +155,4 @@ button:hover {
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-    }
+    
