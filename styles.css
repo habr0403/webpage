@@ -1,6 +1,7 @@
 body {
     font-family:'Lucida Grande';
     background-image: linear-gradient(to bottom right, green, yellow, brown, orange);
+    background-blend-mode: lighten;
     margin: 0;
     padding: 0;
     line-height: 1.5;
