@@ -15,14 +15,16 @@ header {
     text-align: center;
     padding-top: 0px; padding-bottom: 0px;
     margin-top: 0px;
-h1 { 
+
+.h1 { 
     font-size: 50px;
     margin: 0px;
 }
-h2 {
+
+.h2 {
     font-size: 25px;
     margin: 0px;
-    font-family:Verdana, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 nav a {
@@ -115,7 +117,7 @@ button:hover {
             position: fixed;
             pointer-events: none;
             color: rgb(0, 0, 0);
-            opacity: 1;
+            opacity: 90%;
             transition: opacity 0.5s;
         }
 
