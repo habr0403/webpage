@@ -25,6 +25,7 @@ header {
 h1 { 
     font-size: 70px;
     margin: 0px;
+    
 }
 
 h2 {
@@ -33,6 +34,13 @@ h2 {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+h3 {
+    background-color: #6e2a2a;
+    width: contain;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;}
+    
 nav a {
     margin: 20px;
     color: lab(95 0 -0.01);
@@ -42,10 +50,12 @@ nav a {
     text-align: justify;
     font-weight: bold; 
     transition: 0.2;
+    
 }
 
 nav a:hover {
     color: #08e926;
+    
 }
 
 div.gallery {
@@ -56,11 +66,12 @@ div.gallery {
     flex-wrap: wrap;
     color: #f2e3e3;
     margin: 10px;
+    
 }
 
 .gallery img {
     color: #ffffff;
-    display: flex;
+    display: inherit;
     width: 80%;
     height: 80%;
     margin: 10px;
@@ -69,7 +80,7 @@ div.gallery {
     box-shadow: 0 4px 8px rgb(41 154 0);
 }
 
-.gallery img:hover {
+.gallery img: hover; {
     transform: scale(15);
 }
 
@@ -78,10 +89,9 @@ div.gallery {
     color: #17ff1f;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
-    text-size-adjust: 1150;
-    background-blend-mode: lighten;
     border-radius: 0px;
-    box-shadow: 0 px 118px rgb(38 255 0 / 10%);
+    box-shadow: 0 px 118px #8264ee;
+    
 }
     
 .resources {
